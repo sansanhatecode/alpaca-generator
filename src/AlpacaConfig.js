@@ -95,7 +95,7 @@ export const alpacaConfig = [
 		label: "Backgrounds",
 		directory: "backgrounds",
 		items: [
-			{ id: 0, label: "Default", filename: "default"},
+			{ id: 0, label: "Darkblue 30", filename: "darkblue70"},
 			{ id: 1, label: "Blue 50", filename: "blue50"},
 			{ id: 2, label: "Blue 60", filename: "blue60"},
 			{ id: 3, label: "Blue 70", filename: "blue70"},
