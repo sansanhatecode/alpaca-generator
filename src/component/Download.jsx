@@ -3,7 +3,7 @@ import React from "react";
 export default function Random({onClickHandler}) {
     return (
         <button
-            className="absolute z-[1000] mx-12 text-white hover:text-black"
+            className="absolute z-[1000] mx-12 text-white hover:text-black hover:rounded-full hover:bg-white"
             onClick={async () => {
                 await onClickHandler()
             }}

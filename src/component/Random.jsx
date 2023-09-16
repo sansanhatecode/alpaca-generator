@@ -4,7 +4,7 @@ export default function Random(props) {
     const {onClickHandler}=props
     return (
         <button
-            className="absolute z-[1000] mx-5 text-white hover:text-black"
+            className="absolute z-[1000] mx-5 text-white hover:text-black hover:rounded-full hover:bg-white"
             onClick={() => onClickHandler()}
         >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
