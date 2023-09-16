@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Random(onClickHandler) {
+export default function Random(props) {
+    const {onClickHandler}=props
     return (
         <button
             className="absolute z-[1000] mx-5 text-white hover:text-black"

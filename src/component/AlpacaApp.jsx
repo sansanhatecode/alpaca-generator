@@ -61,14 +61,14 @@ export default function AlpacaApp() {
     };
 
     const randomButtonOnClickHandler = () => {
-        setHair(Math.floor(Math.random * 6))
-        setEars(Math.floor(Math.random * 3))
-        setEyes(Math.floor(Math.random * 6))
-        setMouth(Math.floor(Math.random * 5))
-        setNeck(Math.floor(Math.random * 4))
-        setLeg(Math.floor(Math.random * 6))
-        setAccessories(Math.floor(Math.random * 4))
-        setBackground(Math.floor(Math.random * 15))
+        setHair(Math.floor(Math.random() * 6))
+        setEars(Math.floor(Math.random() * 3))
+        setEyes(Math.floor(Math.random() * 6))
+        setMouth(Math.floor(Math.random() * 5))
+        setNeck(Math.floor(Math.random() * 4))
+        setLeg(Math.floor(Math.random() * 6))
+        setAccessories(Math.floor(Math.random() * 4))
+        setBackground(Math.floor(Math.random() * 15))
     };
 
     const downloadButtonOnClickHandler = () => {
