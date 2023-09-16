@@ -11,7 +11,6 @@ const StylesButton = (props) => {
 		nose,
 		accessories,
 		background,
-		feature,
 		styles,
 		featureId,
 	} = props;

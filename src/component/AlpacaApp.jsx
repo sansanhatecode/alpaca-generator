@@ -4,6 +4,8 @@ import Header from "./Header";
 import FeatureButton from "./FeatureButton";
 import StylesButton from "./StyleButton";
 import AlpacaAvatar from "./AlpacaAvatar";
+import Random from "./Random";
+import Download from "./Download"
 
 export default function AlpacaApp() {
     const [feature, setFeature] = useState(alpacaConfig[0].id);
@@ -25,7 +27,6 @@ export default function AlpacaApp() {
     };
 
     const stylesButtonOnClickHandler = (featureId, id) => {
-        console.log('stylesButtonOnClickHandler', featureId, id)
         switch (featureId) {
             case 0:
                 setHair(id);
@@ -59,23 +60,49 @@ export default function AlpacaApp() {
         }
     };
 
+    const randomButtonOnClickHandler = () => {
+        setHair(Math.floor(Math.random * 6))
+        setEars(Math.floor(Math.random * 3))
+        setEyes(Math.floor(Math.random * 6))
+        setMouth(Math.floor(Math.random * 5))
+        setNeck(Math.floor(Math.random * 4))
+        setLeg(Math.floor(Math.random * 6))
+        setAccessories(Math.floor(Math.random * 4))
+        setBackground(Math.floor(Math.random * 15))
+    };
+
+    const downloadButtonOnClickHandler = () => {
+        console.log(Math.random)
+    }
+
     return (
         <div className="bg-gray-100 h-screen border-x-[150px] border-y-[50px] border-white">
             <Header></Header>
             <div className="flex justify-center">
-                <div className='w-[450px] px-5'>
-                    <AlpacaAvatar
-                        data={alpacaConfig}
-                        hair={hair}
-                        ears={ears}
-                        eyes={eyes}
-                        mouth={mouth}
-                        neck={neck}
-                        leg={leg}
-                        accessories={accessories}
-                        background={background}
-                    />
+                <div>
+                    <div className='w-[450px] px-5'>
+                        <AlpacaAvatar
+                            data={alpacaConfig}
+                            hair={hair}
+                            ears={ears}
+                            eyes={eyes}
+                            mouth={mouth}
+                            neck={neck}
+                            leg={leg}
+                            accessories={accessories}
+                            background={background}
+                        />
+                    </div>
+                    <div>
+                        <Random
+                            onClickHandler = {randomButtonOnClickHandler}
+                        />
+                        <Download
+                            onClickHandler={downloadButtonOnClickHandler}
+                        />
+                    </div>
                 </div>
+
                 <div className='w-[550px] px-5'>
                     <div>
                         <p className="font-mochi text-xs">ACCESSORIZE THE ALPACA'S</p>
@@ -103,7 +130,7 @@ export default function AlpacaApp() {
                         />
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );

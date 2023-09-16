@@ -107,9 +107,9 @@ export const alpacaConfig = [
 			{ id: 9, label: "Red 50", filename: "red50"},
 			{ id: 10, label: "Red 60", filename: "red60"},
 			{ id: 11, label: "Red 70", filename: "red70"},
-			{ id: 13, label: "Yellow 50", filename: "yellow50"},
-			{ id: 14, label: "Yellow 60", filename: "yellow60"},
-			{ id: 15, label: "Yellow 70", filename: "yellow70"}
+			{ id: 12, label: "Yellow 50", filename: "yellow50"},
+			{ id: 13, label: "Yellow 60", filename: "yellow60"},
+			{ id: 14, label: "Yellow 70", filename: "yellow70"}
 		]
 	}
 ];
