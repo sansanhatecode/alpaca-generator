@@ -74,10 +74,6 @@ export default function AlpacaApp() {
     setBackground(Math.floor(Math.random() * 15))
   };
 
-  const downloadButtonOnClickHandler = () => {
-    console.log(Math.random);
-  };
-
   const saveImage = async () => {
     if (!imageRef?.current) return;
 
@@ -112,7 +108,7 @@ export default function AlpacaApp() {
               background={background}
             />
             <div className='absolute top-0 left-0'>
-              <Random onClickHandler={downloadButtonOnClickHandler} />
+              <Random onClickHandler={randomButtonOnClickHandler} />
               <Download onClickHandler={saveImage} />
             </div>
           </div>
